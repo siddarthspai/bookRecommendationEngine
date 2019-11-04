@@ -1,2 +1,2 @@
 # BookRecommendationEngine
-A simple but effective book recommendation engine
+A simple but efficient book recommendation engine
