@@ -16,12 +16,9 @@ body{
 }
 
 .logo{
-    height:18vh;
+    height:10vh;
     width:15vw;
     border:1px solid red;
-    max-width: 17vw;
-    max-height: 20vh;
-    background-image: url("./assets/newlogo.jpg");
 }
 
 .searchBar{
