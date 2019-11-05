@@ -153,6 +153,19 @@ input[type=text]:focus {
     cursor: pointer;
 }
 
+.bookCase{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1vw;
+    padding: 3vw;
+}
+
+.bookCase>div>img{
+    max-width: 15vw;
+    max-height: 50vh;
+}
+
+
 .recommend {
     border: 2px solid red;
     width: 30vw;
