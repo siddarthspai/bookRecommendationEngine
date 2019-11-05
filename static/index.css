@@ -1,57 +1,160 @@
-body{
+body {
     /* background-color: ; */
-    margin:0;
+    margin: 0;
 }
 
-.bigWrapper{
+.bigWrapper {
     /* background-color: black; */
     height: 100vh;
-    width:  100vw;
+    width: 100vw;
 }
 
-.navbar{
+.navbar {
     /* border: 2px solid green; */
-    height:10vh;
+    height: 10vh;
     display: flex;
+    overflow: hidden;
 }
 
-.logo{
-    height:10vh;
-    width:15vw;
-    border:1px solid red;
+.box-shadow {
+    -webkit-box-shadow: 0 0px 5px #888888;
+    -moz-box-shadow: 0 10px 5px #888888;
+    box-shadow: 0 7px 5px #888888;
 }
 
-.searchBar{
-    width:50vw;
-    border:2px solid blue;
-
+.logo {
+    height: 10vh;
+    /* width:15vw; */
 }
 
-.profileBar{
-    width:35vw;
-    border:1px solid green;
+.logo>img {
+    /* height:15vh; */
+    /* width:15vw; */
+    /* border:1px solid red; */
+    /* max-width: 20vw; */
+    max-height: 10vh;
+    /* background-image: url("./assets/newlogo.jpg"); */
 }
 
-.details{
-    display :flex;
-    height:90vh;
-    width:100vw;
+.links {
+    width: 60vw;
+    /* border: 1px black solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.readBooks{
-    width:70vw;
+.links>a {
+    font-size: 1vw;
+    padding: 3vw;
+    font-style: oblique;
+}
+
+.links>a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.searchBar {
+    width: 20vw;
+    /* border:2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar>input {
+    width: 10vw;
+    font-size: 1vw;
+    border: 1px gray solid;
+    background: white;
+    border-radius: 20px;
+    padding: 0.1vw;
+    /* background-color: white;     */
+}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 70%;
+}
+
+.searchBar>button {
+    margin-left: 1vw;
+    font-size: 1vw;
+    color: white;
+    background-color: #2196F3;
+    border-radius: 0.5vw;
+}
+
+.profileBar {
+    width: 25vw;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: black; */
+}
+
+.userName {
+    padding: 1vw;
+    font-size: 1vw;
+}
+
+.userImg>img {
+    max-width: 5vw;
+    max-height: 5vh;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.details {
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+}
+
+.readBooks {
+    width: 70vw;
     font-size: 10vw;
 }
-.filter{
-    /* border:1px solid black; */
-    font-size:2vw;
+
+.filter {
+    border: 1px solid black;
+    font-size: 1.8vw;
     display: flex;
     justify-content: end;
-    padding:0.5vw;
+    padding: 1vw;
 }
 
-.recommend{
-    border:2px solid red;
-    width:30vw;
+.filter>button {
+    border: black 2px solid;
+    background: white;
+    width: 10vw;
+    height: 5vh;
+    font-size: 1vw;
+    /* padding: 1vw; */
+    margin-left: 1vw;
+    /* cursor: pointer; */
+}
+
+.filter>button>span {
+    /* display: flex;
+    justify-content: end;
+    align-items: center;
+    border: 1px black solid;
+    width: 3 rem; */
+    display: inline-block;
+    /* margin-top: -400px; */
+    cursor: pointer;
+}
+
+.recommend {
+    border: 2px solid red;
+    width: 30vw;
     font-size: 2vw;
 }
