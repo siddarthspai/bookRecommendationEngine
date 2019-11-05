@@ -124,7 +124,7 @@ input[type=text]:focus {
 }
 
 .filter {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-size: 1.8vw;
     display: flex;
     justify-content: end;
