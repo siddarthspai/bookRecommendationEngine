@@ -171,3 +171,13 @@ input[type=text]:focus {
     width: 30vw;
     font-size: 2vw;
 }
+
+
+.recommendbookCase>div>img{
+	max-width: 20vw;
+	max-height: 40vh;
+	display:block;
+	margin:auto;
+
+}
+
