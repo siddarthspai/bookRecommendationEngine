@@ -155,14 +155,22 @@ input[type=text]:focus {
 
 .bookCase{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 1vw;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 3vw;
+
     padding: 3vw;
 }
 
+.bookCase>div{
+    display: flex;
+    justify-content: center;
+}
+
 .bookCase>div>img{
-    max-width: 15vw;
-    max-height: 50vh;
+    width:100%;
+    max-width: 10vw;
+    max-height: 30vh;
+    box-shadow:  10px 10px grey;
 }
 
 
