@@ -1,0 +1,142 @@
+@font-face{
+    font-family: "Peaches And Cream";
+    src: url('./PeachesandCreamRegularW00.ttf');
+  }
+
+body{
+    background-image:url("../assets/loginbgnd.jpg");
+    background-size: cover;
+}
+
+.bodytitle{
+    background-color:black;
+    opacity:0.85;
+    display: flex;
+    justify-content: center;
+    font-family: "Peaches And Cream";
+    font-size:100px;
+    color :#f4511e;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+
+.bg-modal{
+    width:100vw;
+    height:100vh;
+    /* background-color:    rgba(0,0,0,0.7);    */
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+  }
+
+  button:hover{
+    opacity: 0.8;
+  }
+
+
+.forgot{
+    text-decoration: none;
+    float: right;
+    /* font-size:2px; */
+    color: black;
+    margin-right:34px;
+    margin-top:26px;
+  }
+  
+  .forgot:hover {
+    text-decoration: underline;
+  }
+  
+
+.rem{
+    position: absolute;
+    left:50px;
+    margin: 26px 30px;
+  }
+
+
+.modalContentSignup{
+    width:550px;
+    height:850px;
+    background-color: white;
+    opacity:0.95;
+    text-align: center;
+    position: relative;
+    margin-top:200px;
+    padding:10px;    
+  }
+  
+  .signupForm > input{
+    width:90%;
+    display: block;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+    margin:15px auto;
+    font-size:35px;
+    padding: 10px 15px;
+    position: relative;
+  }
+  
+  .modalContentSignup > div > button {
+    width:90%;
+    display :block;
+    border:1px solid black;
+    box-sizing: border-box;
+    font-size:20px;
+    margin:15px auto;
+    padding: 10px 15px;
+    position:relative;
+  }
+  
+  .signupForm{
+    padding: 30px; 
+  }
+  
+  .or{
+    font-size: 25px;
+  }
+  
+  .fb{
+    background-color: #3b5998;
+    color: white;
+  }
+
+  .google{
+    background-color: #D44638;
+    color: white;
+  }
+  
+  .fb:hover, .google:hover{
+    cursor: pointer;
+  }
+
+
+.loginButton{
+    background-color: black;
+    color: white;
+    padding: 14px 20px;  
+    margin:8px 26px;
+    /* border:solid 1px black; */
+    font-size:20px;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+
+  .fb>img{
+   font-size:0.1vw;
+  }
+/* 
+  .fb>span{
+    background: url("../assets/fb.png");
+    border: 2px red solid;
+    width:1vw;
+    height:1vh;
+  } */
+
+.fb>img{
+  font-size:1vw;
+}
