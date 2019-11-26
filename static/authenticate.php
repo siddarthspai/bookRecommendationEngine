@@ -21,7 +21,8 @@ if(count($_POST)>0) {
 		echo $message;
 		
 	} else {
-		header("Location:../landing/landing.php");
+        setcookie("uname",$_POST[username] , time()+2*24*60*60);
+		header("Location:./landing/landing.php");
 	}
 	
 }

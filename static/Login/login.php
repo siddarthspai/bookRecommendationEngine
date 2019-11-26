@@ -17,7 +17,7 @@
  
           <div class = "bg-modal" >
             <div class = "modalContentSignup">
-              <form action ="signup.php" method="post" class = "signupForm">
+              <form action ="../signup.php" method="post" class = "signupForm">
                 <input type = "text" placeholder = "Username" name="username" required/>
                 <input type = "email" placeholder = "Email" name="email" required/>
                 <input type = "password" placeholder = "Password" name="pass" required/>
@@ -42,7 +42,7 @@
               </div> -->
               
           <div class = "modalContentLogin">
-            <form  action="authenticate.php" method="post" class = "signupForm" >
+            <form  action="../authenticate.php" method="post" class = "signupForm" >
               <input type = "text" placeholder = "Username" name="username" required/>
               <input type = "password" placeholder = "Password" name="pass" required/>
               <input type = "submit" class ="loginButton" value="Login"/>
