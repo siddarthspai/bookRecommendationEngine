@@ -19,12 +19,8 @@ VALUES
 
  
 mysqli_query($con,$sql);
-
+setcookie("uname",$_POST[username] , time()+2*24*60*60); 
 header("Location:../landing/landing.php");
-
- 
-
 mysqli_close($con);
-
 ?>
 

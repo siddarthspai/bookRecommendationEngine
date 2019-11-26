@@ -35,7 +35,14 @@
             <div class="profileBar">
                 <div class="userName">
                     Logged User :
-                    <a>Nikhil Babu</a>
+                    <?php
+                        if(isset($_COOKIE["uname"])){ 
+                            echo $_COOKIE["uname"]; 
+                        } 
+                        else{ 
+                            echo "Not Logged In"; 
+                            } 
+                    ?>
                 </div>
                 <div class="userImg">
                     <img src="../../assets/46668690_2197581593863101_5053659812705861632_n.jpg">
