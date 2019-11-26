@@ -18,10 +18,10 @@
           <div class = "bg-modal" >
             <div class = "modalContentSignup">
               <form class = "signupForm">
-                <input type = "text" placeholder = "Username" required></input>
-                <input type = "email" placeholder = "Email" required></input>
-                <input type = "password" placeholder = "Password" required></input>
-                <input type = "password" placeholder = "Confirm Password" required></input>
+                <input type = "text" placeholder = "Username" required/>
+                <input type = "email" placeholder = "Email" required>
+                <input type = "password" placeholder = "Password" required>
+                <input type = "password" placeholder = "Confirm Password" required>
               </form>
               <button type = "submit" class ="loginButton">Register</button>
               <div class = "or"><hr />OR <hr /></div>
@@ -42,8 +42,8 @@
               
           <div class = "modalContentLogin">
             <form class = "signupForm">
-              <input type = "text" placeholder = "Username" required></input>
-              <input type = "password" placeholder = "Password" required></input>
+              <input type = "text" placeholder = "Username" required>
+              <input type = "password" placeholder = "Password" required>
             </form>
             <button type = "submit" class ="loginButton">Log-in</button>
         </div>
