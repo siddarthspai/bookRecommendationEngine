@@ -17,13 +17,14 @@
  
           <div class = "bg-modal" >
             <div class = "modalContentSignup">
-              <form class = "signupForm">
-                <input type = "text" placeholder = "Username" required/>
-                <input type = "email" placeholder = "Email" required>
-                <input type = "password" placeholder = "Password" required>
-                <input type = "password" placeholder = "Confirm Password" required>
+              <form action ="signup.php" method="post" class = "signupForm">
+                <input type = "text" placeholder = "Username" name="username" required/>
+                <input type = "email" placeholder = "Email" name="email" required/>
+                <input type = "password" placeholder = "Password" name="pass" required/>
+                <input type = "password" placeholder = "Confirm Password" name="cpass" required/>
+                <input type = "submit" class ="loginButton" value="Register"/>
               </form>
-              <button type = "submit" class ="loginButton">Register</button>
+              
               <div class = "or"><hr />OR <hr /></div>
              
     
@@ -41,11 +42,11 @@
               </div> -->
               
           <div class = "modalContentLogin">
-            <form class = "signupForm">
-              <input type = "text" placeholder = "Username" required>
-              <input type = "password" placeholder = "Password" required>
+            <form  action="authenticate.php" method="post" class = "signupForm" >
+              <input type = "text" placeholder = "Username" name="username" required/>
+              <input type = "password" placeholder = "Password" name="pass" required/>
+              <input type = "submit" class ="loginButton" value="Login"/>
             </form>
-            <button type = "submit" class ="loginButton">Log-in</button>
         </div>
         </div>
     </div>
