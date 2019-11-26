@@ -45,7 +45,62 @@
         <div class="details">
             <div class="readBooks">
                 <div class="filter">
-                    Sort By:<button> Genre <span>&#8964</span></button>
+                    Sort By:
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Genre <span> &#8964 </span></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          
+                          <a href="#trate" onclick="hideDisplay()">Top Rated</a>
+                          <a href="#tread">Top Read</a>
+                          <a href="#auth">Author</a>
+                          <a href="#cost">Cost</a>
+                          <a href="#date">Published Date</a>
+                        </div>
+                      </div> 
+                <script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                    } else {
+                    a[i].style.display = "none";
+                    }
+                }
+                } 
+
+                function hideDisplay() {
+                    // input1 = document.getElementById("#trate");
+                    // input2 = document.getElementById("#tread");
+                    // input3 = document.getElementById("#auth");
+                    // input4 = document.getElementById("#cost");
+                    // input5 = document.getElementById("#date");
+                    // input1.style.display = "none";
+                // div = document.getElementById("myDropdown");
+                // a = div.getElementsByTagName("a");
+                // for (i = 0; i < a.length; i++) {
+                //     txtValue = a[i].textContent || a[i].innerText;
+                //     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                //     a[i].style.display = "";
+                //     } else {
+                //     a[i].style.display = "none";
+                //     }
+                // }
+                // div.style.display = "none";
+                }
+                
+                </script>
                 </div>
                 <div class="bookCase">
                     <div><img src="../assets/book4.jpg"></div>
