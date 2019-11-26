@@ -4,7 +4,7 @@
   }
 
 body{
-    background-image:url("../../assets/loginbgnd.jpg");
+    background-image:url("../assets/loginbgnd.jpg");
     background-size: cover;
 }
 
@@ -75,7 +75,7 @@ body{
     border:1px solid #ccc;
     box-sizing: border-box;
     margin:15px auto;
-    font-size:35px;
+    font-size:20px;
     padding: 10px 15px;
     position: relative;
   }
