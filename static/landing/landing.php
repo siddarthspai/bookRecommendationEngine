@@ -35,6 +35,7 @@
             <div class="profileBar">
                 <div class="userName">
                     Logged User :
+                    
                     <?php
                         if(isset($_COOKIE["uname"])){ 
                             echo $_COOKIE["uname"]; 
