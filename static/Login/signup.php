@@ -6,7 +6,7 @@ if (!$con)
   }
 $sql="INSERT INTO auth
 VALUES
-('$_POST[username]','$_POST[email]','$_POST[pass]','$_POST[cpass]')";
+('$_POST[username]','$_POST[email]','$_POST[pass]','$_POST[cpass]','$_POST[img]')";
  
 mysqli_query($con,$sql);
 setcookie("uname",$_POST[username] , time()+2*24*60*60); 
