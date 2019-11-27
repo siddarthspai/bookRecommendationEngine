@@ -106,8 +106,8 @@ input[type=text]:focus {
 }
 
 .userImg>img {
-    max-width: 5vw;
-    max-height: 5vh;
+    max-width: 8vw;
+    max-height: 8vh;
     border-radius: 100%;
     cursor: pointer;
 }

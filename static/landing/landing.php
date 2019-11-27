@@ -33,23 +33,47 @@
                 <button>Search</button>
             </div>
             <div class="profileBar">
-                <div class="userName">
-                    Logged User :
-                    
-                    <?php
-                        if(isset($_COOKIE["uname"])){ 
-                            echo $_COOKIE["uname"]; 
-                        } 
-                        else{ 
-                            echo "Not Logged In"; 
+                    <div class="userName">
+                        Logged User :
+                        
+                        <?php
+                            if(isset($_COOKIE["uname"])){ 
+                                echo $_COOKIE["uname"]; 
                             } 
+                            else{ 
+                                echo "Not Logged In"; 
+                                } 
+                        ?>
+                    </div>
+                    <?php
+                        $host ="localhost";
+                        $uname = "root";
+                        $pwd = 'root@123';
+                        $db_name = "ASD";
+                        $temp_user=$_COOKIE["uname"]; 
+                                        
+
+                        $file_path = '../../assets';
+                        $result = mysqli_connect($host,$uname,$pwd,$db_name) or die("Could not connect to database." .mysqli_error());
+                        mysqli_select_db($result,$db_name) or die("Could not select the database." .mysqli_error());
+                        $image_query1 = mysqli_query($result,"select pimg from auth where Username= '$temp_user'");
+                        while($rows = mysqli_fetch_array($image_query1))
+                        {
+                            $img_src1 = $rows['pimg'];
+                        
                     ?>
-                </div>
-                <div class="userImg">
-                    <img src="../../assets/46668690_2197581593863101_5053659812705861632_n.jpg">
-                </div>
+                    <div class="userImg">
+        
+                        <img  src="<?php echo $img_src1; ?>" alt="" />
+                        <!--   <p><strong><?php echo $img_name; ?></strong></p>-->
+                    </div>
+
+                    <?php
+                        }
+                    ?>
             </div>
         </div>
+
         <div class="details">
             <div class="readBooks">
                 <div class="filter">
@@ -58,7 +82,6 @@
                         <button onclick="myFunction()" class="dropbtn">Genre <span> &#8964 </span></button>
                         <div id="myDropdown" class="dropdown-content">
                           
-                          <a href="#trate" onclick="hideDisplay()">Top Rated</a>
                           <a href="#tread">Top Read</a>
                           <a href="#auth">Author</a>
                           <a href="#cost">Cost</a>
