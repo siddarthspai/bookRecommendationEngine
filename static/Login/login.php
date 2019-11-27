@@ -22,6 +22,7 @@
                 <input type = "email" placeholder = "Email" name="email" required/>
                 <input type = "password" placeholder = "Password" name="pass" required/>
                 <input type = "password" placeholder = "Confirm Password" name="cpass" required/>
+                <input type = "text" placeholder = "Profile Image URL" name="img"/>
                 <input type = "submit" class ="loginButton" value="Register"/>
               </form>
               
