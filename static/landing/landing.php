@@ -125,11 +125,12 @@
                     $uname = "root";
                     $pwd = 'root@123';
                     $db_name = "ASD";
+                    $temp_user=$_COOKIE["uname"];                    
 
                     $file_path = '../../assets';
                     $result = mysqli_connect($host,$uname,$pwd,$db_name) or die("Could     not                           connect to database." .mysqli_error());
                     mysqli_select_db($result,$db_name) or die("Could not select    the database." .mysqli_error());
-                    $image_query = mysqli_query($result,"select book_img  from user_book");
+                    $image_query = mysqli_query($result,"select book_img  from user_book where username= '$temp_user'");
                     while($rows = mysqli_fetch_array($image_query))
                     {
                         $img_src = $rows['book_img'];
