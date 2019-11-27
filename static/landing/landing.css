@@ -106,7 +106,7 @@ input[type=text]:focus {
 }
 
 .userImg>img {
-    max-width: 8vw;
+    max-width: 10vw;
     max-height: 8vh;
     border-radius: 100%;
     cursor: pointer;
@@ -220,13 +220,13 @@ input[type=text]:focus {
 .bookCase{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 3vw;
-
+    grid-gap: 2vw;
+    
     padding: 3vw;
 }
 
 .bookCase>div{
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
@@ -235,6 +235,16 @@ input[type=text]:focus {
     max-width: 10vw;
     max-height: 30vh;
     box-shadow:  10px 10px grey;
+
+}
+
+.bookCase>div>p{
+    font-size:1.1vw; 
+    display:flex;
+    max-width: 10vw;
+    max-height:2vh;
+    justify-content:center;
+/*  border:2px solid black;*/
 }
 
 
@@ -255,6 +265,19 @@ input[type=text]:focus {
 
 }
 
+.recommendbookCase>button{
+ 
+    display:flex;
+    justify-content:center;
+}
+.recommendbookCase>a{
+    margin-top:5vh;    
+    color:orange;
+    display:flex;
+    justify-content:center;
+    font-style:italic;
+}
+
 .button {
     display: inline-block;
     background-color: #f4511e;
@@ -266,7 +289,7 @@ input[type=text]:focus {
     width: 40%;
     transition: all 0.5s;
     cursor: pointer;
-    margin-left: 1.5vw;
+    margin-left: 8vw;
     margin-top: 15vh;
     vertical-align:middle;
   }
