@@ -77,17 +77,17 @@
         <div class="details">
             <div class="readBooks">
                 <div class="filter">
-                    Sort By:
+                
                     <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn">Genre <span> &#8964 </span></button>
+                       <!-- <button onclick="myFunction()" class="dropbtn">Sort By <span> &#8964 </span></button> --> 
                         <div id="myDropdown" class="dropdown-content">
-                          
-                          <a href="#tread">Top Read</a>
-                          <a href="#auth">Author</a>
-                          <a href="#cost">Cost</a>
-                          <a href="#date">Published Date</a>
+                          <a href="#name">Name</a>
+                          <a href="#author">Author</a>
+                          <a href="#Genre">Genre</a>
+                          <a href="#Cost">Cost</a>
                         </div>
-                      </div> 
+                        
+                      </div>
                 <script>
                 /* When the user clicks on the button,
                 toggle between hiding and showing the dropdown content */
@@ -110,26 +110,6 @@
                     }
                 }
                 } 
-
-                function hideDisplay() {
-                    // input1 = document.getElementById("#trate");
-                    // input2 = document.getElementById("#tread");
-                    // input3 = document.getElementById("#auth");
-                    // input4 = document.getElementById("#cost");
-                    // input5 = document.getElementById("#date");
-                    // input1.style.display = "none";
-                // div = document.getElementById("myDropdown");
-                // a = div.getElementsByTagName("a");
-                // for (i = 0; i < a.length; i++) {
-                //     txtValue = a[i].textContent || a[i].innerText;
-                //     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                //     a[i].style.display = "";
-                //     } else {
-                //     a[i].style.display = "none";
-                //     }
-                // }
-                // div.style.display = "none";
-                }
                 
                 </script>
                 </div>
@@ -153,15 +133,16 @@
                     $file_path = '../../assets';
                     $result = mysqli_connect($host,$uname,$pwd,$db_name) or die("Could     not                           connect to database." .mysqli_error());
                     mysqli_select_db($result,$db_name) or die("Could not select    the database." .mysqli_error());
-                    $image_query = mysqli_query($result,"select book_img  from user_book where username= '$temp_user'");
+                    $image_query = mysqli_query($result,"select book_img,book_name  from user_book where username= '$temp_user'");
                     while($rows = mysqli_fetch_array($image_query))
                     {
                         $img_src = $rows['book_img'];
+                        $bname = $rows['book_name'];
                 ?>
 <div >
      
         <img src="<?php echo $img_src; ?>" alt="" />
-     <!--   <p><strong><?php echo $img_name; ?></strong></p>-->
+        <p><?php echo $bname; ?></p>
      
         </div>
 
@@ -171,9 +152,11 @@
                 </div>
             </div>
             <div class="recommend">
+            
 		<div class="recommendbookCase">
+            <a>Recommended Books</a>
             <div><img src="../../assets/martian.jpg"></div>
-            <button class="button"><span>Recommend a book </span></button>
+           <!-- <button class="button"><span>Recommend a book </span></button>-->
             <button class="button"><span>Buy this book </span></button>
 		</div>
             </div>
