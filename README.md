@@ -1,2 +1,2 @@
-# BookRecommendationEngine
-A simple but efficient book recommendation engine
+# Prologue
+An online platform to keep track of a user's favourite books.
