@@ -5,4 +5,4 @@ Front End - HTML/CSS/JS
 <br>
 Back End - PHP
 <br>
-Database - SQL
+Database - MySQL
